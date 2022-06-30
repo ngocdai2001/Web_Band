@@ -1,0 +1,85 @@
+
+/* MOBILE: max-width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .s-mt-16{
+        margin-top: 16px;
+        margin-bottom: -8px;
+    }
+
+    .s-full-width{
+        width: 100%;
+    }
+
+    .s-col-full{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .s-col{
+        display: initial;
+    }
+
+    #nav{
+        display: block  ;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 1px 38px;
+        line-height: 48px;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+
+    #content .list-member{
+        display: initial;
+    }
+
+    #content .list-item{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #content .member-img{
+        width: 55%;
+    }
+
+    #content .member-name {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* TABLET: min-width >= 740px max-width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    #header .mobile-menu-btn{
+        display: none;
+    }
+}
+
+/* PC: min-width <= 1024px */
+@media only screen and (min-width: 64em) {
+    #header .mobile-menu-btn{
+        display: none;
+    }
+}
+

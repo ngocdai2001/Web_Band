@@ -1,0 +1,514 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hàm dùng chung */
+.text-while{
+    color: #fff !important; 
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.mt-8{
+    margin-top: 8px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.row{
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.col-third{
+    width: 33.333333%;
+}
+
+.col-half{
+    width: 50%;    
+}
+
+
+/* MAIN */
+/* HEADER */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 46px;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style: none;    
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+.subnav > li:hover > a,
+#nav > li:hover > a{
+    color: black;
+    background-color: #ccc;
+} 
+
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0px;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.4);
+}
+
+#nav .nav-down{
+    font-size: 11px;
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    padding-bottom: 1px;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color:#ccc;  
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#header .search-btn:hover{
+    background-color:#f44336;
+    cursor: pointer;
+}
+
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+/* SLIDE */
+#slide{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('https://philanthropytimes.files.wordpress.com/2014/06/one-direction-teen-vogue.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+#slide .text-heading{
+    position: absolute;
+    bottom: 46px;
+    color: #fff;
+    right: 0;
+    left: 0;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+}
+
+#slide .heading-slide{
+   font-weight: 500;
+   font-size: 24px;
+}
+
+#slide .content-slide{
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+/* CONTENT */
+#content{
+
+}
+
+    /* Member Band */
+#content .content-header{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;  
+}
+
+#content .content-header1{
+    text-align: center;
+   font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+#content .content-sub-header1{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .content-text{
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#content .list-member{
+    display: flex;
+    margin-top: 50px;
+
+}
+
+#content .list-item{
+    width: calc(100% / 5);
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin-bottom: 23px;
+}
+
+#content .member-img{
+    width: 140px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+    /* Tour */
+.tour{
+    background-color: #000;
+}
+
+.stick-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.stick-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.stick-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.stick-list .quantity{
+    float: right;
+    width: 25px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    background-color: #000;
+    margin-top: -2px;
+}
+
+.place-list{
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+}
+
+.place-header{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.place-time{
+    margin-top: 15px;
+    font-size: 15px;
+    color: #757575;
+}
+
+.place-content{
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.place-buy{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 14px;
+    margin-top: 16px;
+    border: none;
+    text-align: center;
+}
+
+.place-buy:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+    /* Contact Band */
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalHienThi ease 0.5s;  
+}
+
+header.modal-header {
+    background-color: #009688;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    display: flex;
+}
+
+.header-ti-icon{
+    margin-right: 15px;
+}
+
+.modal-close{
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+    padding: 16px 16px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.body {
+    padding: 16px;
+}
+
+.modal-laber {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    padding: 9px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+}
+
+#buy-stiket {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: #009688;
+    padding: 18px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#buy-stiket:hover{
+    opacity: 0.8;
+}
+
+.modal-footer{
+    padding: 16px;
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.modal-footer a{
+    color: #2196F3;
+}
+
+/* Tạo hiệu ứng chuyển động */
+@keyframes modalHienThi{
+    from{
+        opacity: 0;
+        transform: translateY(-180px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* CONTACT FORM */
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 35px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-content .btn-submit{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 11px 17px;
+    float: right;
+    cursor: pointer;
+}
+
+.contact-content .btn-submit:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#map{
+    width: 100%;
+}
+
+/* FOOTER */
+#footer{
+    text-align: center;
+    padding: 64px 16px;
+}
+
+#footer .socials-list a{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover{
+    opacity: 0.5;
+}
+
+#footer .copyright{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 15px 0px;
+}
+
+#footer .copyright a{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
